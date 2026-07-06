@@ -1,0 +1,18 @@
+.about { padding: 124px 0; }
+.about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.about__heading { font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.75rem); font-weight: 700; line-height: 1.15; color: var(--white); margin-bottom: 28px; }
+.about__heading-accent { color: var(--accent); }
+.about__para { font-size: 0.9375rem; color: var(--ink-mid); line-height: 1.8; margin-bottom: 18px; }
+.about__para strong { color: var(--ink-high); font-weight: 600; }
+.about__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-bottom: 24px; border: 1px solid rgba(166,178,200,0.14); border-radius: 18px; overflow: hidden; background: rgba(255,255,255,0.02); box-shadow: 0 24px 60px rgba(0,0,0,0.18); }
+.about__stat { background: linear-gradient(180deg, rgba(13,20,36,0.92), rgba(13,20,36,0.72)); padding: 24px 20px; display: flex; flex-direction: column; gap: 4px; transition: transform 0.25s ease, background 0.25s ease; }
+.about__stat:hover { transform: translateY(-2px); background: linear-gradient(180deg, rgba(18,27,48,0.96), rgba(13,20,36,0.82)); }
+.about__stat-value { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--white); line-height: 1; font-variant-numeric: tabular-nums; }
+.about__stat-label { font-size: 0.75rem; color: var(--ink-low); font-family: var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; }
+.about__card { border: 1px solid rgba(166,178,200,0.14); border-radius: 18px; overflow: hidden; background: rgba(13,20,36,0.72); backdrop-filter: blur(14px); box-shadow: 0 24px 60px rgba(0,0,0,0.16); }
+.about__card-row { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; font-size: 0.8125rem; border-bottom: 1px solid rgba(166,178,200,0.12); transition: background 0.2s ease; }
+.about__card-row:hover { background: rgba(124,140,255,0.04); }
+.about__card-row:last-child { border-bottom: none; }
+.about__card-key { font-family: var(--font-mono); color: var(--ink-low); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.about__card-val { color: var(--ink-mid); font-weight: 500; text-align: right; }
+@media (max-width: 900px) { .about__grid { grid-template-columns: 1fr; gap: 48px; } }
