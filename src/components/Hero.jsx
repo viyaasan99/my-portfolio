@@ -55,7 +55,7 @@ export default function Hero() {
       <div className="container hero__inner">
         <div className="hero__tag">
           <span className="hero__tag-dot" />
-          Available for opportunities
+          Available for opportunities 🚀
         </div>
         <h1 className="hero__name">
           Viyaasan<br />
